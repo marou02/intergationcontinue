@@ -2,10 +2,12 @@ pipeline {
     agent any
 
     stages {
-            stage('Build') {
+        stage('clone code') {
             steps {
-                git credentialsId: 'df815c87-7ae7-450b-85ed-843fa31ef441', url: 'https://github.com/marou02/intergationcontinue.git'
-                echo 'clone done'
+                script{
+                    git credentialsId: 'df815c87-7ae7-450b-85ed-843fa31ef441', url: 'https://github.com/marou02/intergationcontinue.git'
+                    echo 'clone done'
+                    }
             }
         }
         stage('Build') {
