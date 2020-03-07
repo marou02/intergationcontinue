@@ -34,7 +34,6 @@ pipeline {
     }
          post {
         always {
-            mail bcc: '', body: 'Salut', cc: '', from: '', replyTo: '', subject: 'Test', to: 'ghannemmarwen@gmail.com'
-        }
+            emailext body: 'Salut!', subject: 'Test', to: 'ghannemmarwen@gmail.com'        }
     }
 }
