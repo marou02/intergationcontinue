@@ -34,6 +34,7 @@ pipeline {
     }
          post {
         always {
-            emailext body: 'Salut!', subject: 'test', to: 'marwen.ghannem@esprit.tn'        }
+           emailext body: 'salut!', subject: 'slt', to: 'messaouidi.chiheb93@gmail.com'
+           }
     }
 }
