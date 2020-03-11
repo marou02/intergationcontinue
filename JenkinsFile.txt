@@ -30,6 +30,10 @@ pipeline {
             }
         }
         
+        stage('Publish') {
+            nexusPublisher nexusInstanceId: 'releases', nexusRepositoryId: 'releases', packages: [[$class: 'MavenPackage', mavenAssetList: [[classifier: '', extension: '', filePath: 'war/target/jenkins.war']], mavenCoordinate: [artifactId: 'maven-demo-1', groupId: 'tn.esprit', packaging: 'war', version: '2.0']]]            
+        }
+        
 
     }
          post {
