@@ -41,7 +41,7 @@ environment {
 NEXUS_VERSION = "nexus3"
 NEXUS_PROTOCOL = "http"
 NEXUS_URL = "localhost:8081/nexus/"
-NEXUS_REPOSITORY = "Snapshots"
+NEXUS_REPOSITORY = "test"
 NEXUS_CREDENTIAL_ID = "nexus-credentials"
 }
 }
