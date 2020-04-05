@@ -51,7 +51,6 @@ NEXUS_CREDENTIAL_ID = "nexus-credentials"
     }
          post {
         always {
-           emailext body: 'salut', subject: 'test', to: 'marwen.ghannem@esprit.tn'
-           }
+            emailext body: '', subject: '', to: 'ghannemmarwen@gmail.com'           }
     }
 }
