@@ -38,10 +38,10 @@ stage("publish to nexus") {
                     filesByGlob = findFiles(glob: "target/*.${pom.packaging}");
                     // Print 
 environment {
-NEXUS_VERSION = "nexus3"
+NEXUS_VERSION = "nexus2"
 NEXUS_PROTOCOL = "http"
 NEXUS_URL = "localhost:8081/nexus/"
-NEXUS_REPOSITORY = "maven-snapshots"
+NEXUS_REPOSITORY = "release"
 NEXUS_CREDENTIAL_ID = "nexus-credentials"
 }
 }
